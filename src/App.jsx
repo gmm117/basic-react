@@ -1,6 +1,6 @@
 import React from "react";
 import "../public/index.scss";
-// import addcart from "../img/addcart.svg";
+import addcart from "../img/addcart.svg";
 
 export function SubApp({ title }) {
   return <p className="title">{title}</p>;
@@ -11,7 +11,7 @@ function App() {
     <div>
       <SubApp title="Hello React App!!" />
       <p className="sub">Study React</p>
-      {/* <img src={addcart} /> */}
+      <img src={addcart} />
     </div>
   );
 }
