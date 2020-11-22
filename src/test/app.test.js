@@ -14,4 +14,9 @@ describe("app.test", () => {
       "Study React",
     ]);
   });
+
+  test("subApp function test", () => {
+    const tree = renderer.create(<SubApp title="mike" />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
